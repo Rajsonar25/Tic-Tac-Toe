@@ -1,0 +1,80 @@
+
+body{
+
+    background-image: url(https://img.freepik.com/free-vector/alien-planet-landscape-space-game-background_107791-1847.jpg);
+    background-size: cover;
+    backdrop-filter: brightness(30%);
+    height: 100vh;
+    width: 100vw;
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+}
+.heading{
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0 10px red;
+    
+}
+.mainbox{
+    box-shadow: 0 0 20px black;
+    background-color: rgba(225,225,225,0.4);
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 50px;
+    backdrop-filter: blur(60px);
+    width:550px;
+    height: 650px;
+    margin: auto;
+    
+}
+.turn {
+    width: 546px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 140px; 
+    text-shadow: 0 0 10px rgb(45, 39, 45);
+}
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr); /* Ensures even rows */
+    gap: 0; /* Removes unnecessary space between grid cells */
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    color: azure;
+    border: 2px solid whitesmoke;
+    border-radius: 20px;
+    box-shadow: 0 0 50px black;
+}
+
+.box {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Fill grid cell */
+    width: 100%; /* Fill grid cell */
+    text-align: center; /* Center text inside the box */
+    overflow: hidden; /* Prevent overflow of content */
+    word-wrap: break-word; /* Break long words if necessary */
+    font-size: 1.5rem; /* Adjust size for better fit */
+}
+
+.box1{
+    border-top-left-radius: 20px;
+}
+.box3{
+    border-top-right-radius: 20px;
+}
+.box7{
+    border-bottom-left-radius: 20px;
+}
+.box9{
+    border-bottom-right-radius: 20px;
+}
