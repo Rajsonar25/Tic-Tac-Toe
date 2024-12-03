@@ -1,0 +1,135 @@
+body {
+    background: url(https://cdn.pixabay.com/photo/2018/12/29/08/08/background-3901037_1280.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+}
+#reset{
+    padding: 0.75rem;
+    font-size: 1rem;
+    width: 80px;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 40px;
+    background-color: #184454;
+
+}
+#reset:hover{
+    background-color: #00a205;
+    border: none;
+    color: aliceblue;
+}
+.btn{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.mainbox {
+    
+    box-shadow: 0 0 5rem rgb(90, 90, 90);
+    box-sizing: border-box;
+    border: 3px solid rgb(73, 73, 73);
+    border-radius: 50px;
+    backdrop-filter: blur(60px);
+    width: 550px;
+    height: 650px;
+    margin: auto;
+}
+
+.turn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    color: rgb(208, 208, 208);
+ 
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0.75rem;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    color: azure;
+    border-radius: 20px;
+    
+}
+
+.box {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgb(96, 96, 96);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    word-wrap: break-word;
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 20px;
+    box-shadow: 0 0 1rem rgb(95, 95, 95);
+}
+.box:hover{
+    transition: all 0.1s;
+    background-color: #184454;
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .mainbox {
+        width: 80%; /* Adjust width for tablets */
+        border-radius: 30px;
+    }
+
+    .boxes {
+        width: 80%; /* Adjust width proportionally */
+    }
+}
+
+@media (max-width: 480px) {
+    .mainbox {
+        width: 95%; /* Adjust width for small screens */
+        border-radius: 20px;
+    }
+
+    .boxes {
+        width: 95%; /* Adjust width proportionally */
+    }
+
+    .box {
+        font-size: 1.2rem; /* Adjust font size for better fit */
+    }
+
+    .heading {
+        font-size: 1.2rem; /* Ensure heading remains readable */
+    }
+
+    .turn {
+        font-size: 1rem; /* Slightly smaller turn text */
+    }
+}
